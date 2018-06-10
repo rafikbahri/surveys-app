@@ -23,7 +23,9 @@ app.get('/auth/google',passport.authenticate('google',{
 app.get('/auth/google/callback',passport.authenticate('google'));
 
 app.get('/',(req,res)=>{
-    res.send('SURVEYYYYYYYS');
+    res.send('APP DEPLOYED IN HEROKU');
 })
+
+console.log("SERVER LISTENING ON PORT: "+PORT);
 
 app.listen(PORT);

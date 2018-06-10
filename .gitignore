@@ -68,7 +68,5 @@ typings/
 # dotenv environment variables file
 .env
 
-#keys
-config/googleKeys.js
 
 # End of https://www.gitignore.io/api/node,code

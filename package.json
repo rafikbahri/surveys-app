@@ -2,21 +2,20 @@
   "name": "surveys-app",
   "version": "1.0.0",
   "description": "Surveys creation and monitoring platform",
-  "main": "index.js",
+  "main": "app.js",
   "repository": "git@github.com:rafikbahri/surveys-app.git",
   "author": "Rafik <rafikbahri.insat@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node":"8.11.2"
+  },
   "scripts": {
-    "dev":"nodemon index.js",
-    "start":"node index.js"    
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "^4.16.3",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
     "passport-google-oauth20": "^1.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.17.3"
   }
 }
