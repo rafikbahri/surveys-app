@@ -6,6 +6,9 @@
   "repository": "git@github.com:rafikbahri/surveys-app.git",
   "author": "Rafik <rafikbahri.insat@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node":"8.11.2"
+  },
   "scripts": {
     "start": "node app.js"
   },
