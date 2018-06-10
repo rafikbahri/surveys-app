@@ -26,4 +26,6 @@ app.get('/',(req,res)=>{
     res.send('APP DEPLOYED IN HEROKU');
 })
 
+console.log("SERVER LISTENING ON PORT: "+PORT);
+
 app.listen(PORT);
