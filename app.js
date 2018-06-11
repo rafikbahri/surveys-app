@@ -2,8 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-const keys = require('./config/cookieKeys');
-const db = require('./config/mlab');
+const keys = require('./config/keys');
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -17,7 +17,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-mongoose.connect(db.URI).then(res => {
+mongoose.connect(keys.mongoURI).then(res => {
     console.log('CONNECTED TO MLAB DEV DATABASE');
 });
 
