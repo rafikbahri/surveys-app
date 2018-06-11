@@ -8,12 +8,15 @@ module.exports = (app) => {
 
     app.get('/auth/google/callback', passport.authenticate('google'));
 
-    app.get('/api/logout',(req,res)=>{
+    app.get('/api/logout', (req, res) => {
         req.logout();
         res.send(req.user);
     })
 
-    app.get('/api/current_user', (req,res)=> {
+    app.get('/api/current_user', (req, res) => {
+        //Passport attaches the data of the cookie to req.session
+        //Actually it's the user' id that we stored in the cookie
+        // res.send(req.session);
         //Passport automatically attaches user to req
         res.send(req.user);
     });
