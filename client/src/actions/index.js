@@ -13,3 +13,15 @@ export const fetchUser = () => {
             }));
     }
 }
+
+
+export const handleToken = (token) => {
+    return function (dispatch) {
+        axios
+            .post('/api/add_credits', token)
+            .then(res => dispatch({
+                type: FETCH_USER,
+                payload: res.data
+            }));
+    }
+}
