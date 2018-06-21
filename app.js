@@ -19,7 +19,7 @@ app.use(passport.session());
 
 
 mongoose.connect(keys.mongoURI).then(res => {
-    console.log('CONNECTED TO MLAB DEV DATABASE');
+    // console.log('CONNECTED TO MLAB DEV DATABASE');
 });
 
 //Use body-parser middleware
@@ -45,5 +45,5 @@ if(process.env.NODE_ENV==="production"){
 
 }
 const PORT = process.env.PORT || 5000;
-console.log("SERVER LISTENING ON PORT: " + PORT);
+// console.log("SERVER LISTENING ON PORT: " + PORT);
 app.listen(PORT);

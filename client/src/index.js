@@ -17,10 +17,10 @@ ReactDOM.render(
         <App />
     </Provider>
     , document.getElementById('root'));
-console.log('====== REACT_APP_STRIPE_KEY =====');
-console.log(process.env.REACT_APP_STRIPE_KEY);
-console.log('====================================');
-console.log('====== NODE_ENV =====');
-console.log(process.env.NODE_ENV);
-console.log('====================================');
+// console.log('====== REACT_APP_STRIPE_KEY =====');
+// console.log(process.env.REACT_APP_STRIPE_KEY);
+// console.log('====================================');
+// console.log('====== NODE_ENV =====');
+// console.log(process.env.NODE_ENV);
+// console.log('====================================');
 registerServiceWorker();
