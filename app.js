@@ -19,7 +19,7 @@ app.use(passport.session());
 
 
 mongoose.connect(keys.mongoURI).then(res => {
-    console.log('CONNECTED TO MLAB DEV DATABASE');O
+    console.log('CONNECTED TO MLAB DEV DATABASE');
 });
 
 //Use body-parser middleware
@@ -29,10 +29,6 @@ require('./models/User');
 require('./services/passportService');
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
-
-app.get('/', (req, res) => {
-    res.send('Surveys APP');
-});
 
 //Configure routing (react-express) in production mode
 if(process.env.NODE_ENV==="production"){
